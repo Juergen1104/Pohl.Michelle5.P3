@@ -25,15 +25,13 @@ public class Aufgabe_3_1 {
         System.out.println();
 
         /* *** Aufgabenteil (b) *** */
-        int gerade = 0, ungerade = 0, differenz = 0;
+        int gerade = 0, ungerade = 0, differenz;
         // 3
         for (int j : feld) {
             if (j % 2 == 0) {
                 gerade++;
             } else ungerade++;
         }
-        System.out.println("Gerade Zahlen: " + gerade + " ungerade Zahlen:  " + ungerade);
-
         if (gerade == ungerade) {
             System.out.println("Das Feld enthaelt gleich viele gerade und ungerade Zahlen");
         } else if (gerade > ungerade) {
@@ -57,10 +55,7 @@ public class Aufgabe_3_1 {
                 indexMaxDiff = i;
             }
         }
-
-        // Ausgabe der maximalen Differenz
         System.out.println("Die max. Differenz von " + maxDiff + " tritt auf zwischen feld[" + indexMaxDiff + "] und feld[" + (indexMaxDiff + 1) + "].");
-
     }
 }
 
