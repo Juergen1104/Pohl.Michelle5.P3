@@ -25,7 +25,7 @@ public class Aufgabe_3_1 {
         System.out.println();
 
         /* *** Aufgabenteil (b) *** */
-        int gerade = 0, ungerade = 0, differenz;
+        int gerade = 0, ungerade = 0, differenz = 0;
         // 3
         for (int j : feld) {
             if (j % 2 == 0) {
