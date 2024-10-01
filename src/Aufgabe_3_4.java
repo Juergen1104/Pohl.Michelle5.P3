@@ -1,3 +1,4 @@
+// Michelle Pohl
 import java.awt.image.BufferedImage;
 
 public class Aufgabe_3_4 {

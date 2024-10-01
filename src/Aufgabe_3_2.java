@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// Michelle Pohl
 
 public class Aufgabe_3_2 {
 
@@ -12,13 +12,12 @@ public class Aufgabe_3_2 {
 
         System.out.println("Aufgabenteil (a):");
 
-        Scanner scanner = new Scanner(System.in);
 
         // (a) Benutzer nach einer Zahl fragen und Paare finden
 
         do {
             System.out.print("Geben Sie eine Zahl aus dem Intervall [4; 100] ein: ");
-            z = scanner.nextInt();
+            z = IOTools.readInteger();
         } while (z < 4 || z > 100);  // Wiederholen, bis Zahl im richtigen Bereich
 
         System.out.println("Paare von Primzahlen, deren Summe " + z + " ergibt:");
@@ -50,9 +49,6 @@ public class Aufgabe_3_2 {
                 System.out.println("Nichts gefunden fuer " + zahl);
             }
         }
-
-        scanner.close();
-
     }
 
 }
